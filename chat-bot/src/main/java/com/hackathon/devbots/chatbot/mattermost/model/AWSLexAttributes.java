@@ -1,4 +1,4 @@
-package com.hackathon.devbots.chatbot.model;
+package com.hackathon.devbots.chatbot.mattermost.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

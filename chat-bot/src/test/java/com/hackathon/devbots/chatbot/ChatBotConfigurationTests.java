@@ -17,7 +17,7 @@ package com.hackathon.devbots.chatbot;
 
 import static org.junit.Assert.*;
 
-import com.hackathon.devbots.chatbot.model.AWSLexAttributes;
+import com.hackathon.devbots.chatbot.mattermost.model.AWSLexAttributes;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
