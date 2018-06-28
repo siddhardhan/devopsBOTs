@@ -21,7 +21,8 @@ public class JenkinsController {
     @PostMapping(value = "/runbuild", consumes = "application/json")
     public ResponseEntity<Object> getChatIntent(@RequestBody JenkinsModel jenkinsModel) {
         log.info("POSTED Values--->" + jenkinsModel.toString());
-        log.info("POSTED Jenkins Data--->" + jenkinsService.runJenkinsJob());
+        log.info("GET Jenkins Data--->" + jenkinsService.getJenkinsJob());
+        log.info("POST Jenkins Data--->" + jenkinsService.postJenkinsJob());
         return ResponseEntity.ok(jenkinsModel.toString());
     }
 
