@@ -4,3 +4,5 @@
 .idea
 
 target/**
+.DS_Store
+chat-bot/target/**

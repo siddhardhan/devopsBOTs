@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@RequestMapping("/chatbot")
-public class ChatBotController {
+@RequestMapping("/mattermost")
+public class MessageController {
 
-    @PostMapping(value = "/intent", consumes = "application/json")
+    @PostMapping(value = "/message", consumes = "application/json")
     public ResponseEntity<Object> getChatIntent(@RequestBody AWSLexAttributes attributes) {
         log.info("POSTED Values--->" + attributes.toString());
         return ResponseEntity.ok(attributes.toString());
